@@ -1,0 +1,96 @@
+a:link {
+    /* Những đường link mà chưa truy cập đến */
+    color: red;
+  }
+  
+  a:visited {
+    /* Những đường link mà mình đã truy cập */
+    color: green;
+  }
+  
+  a:hover {
+    /* Khi mà mình di chuyển chuột vào đối tượng được selector */
+    color: blue;
+  }
+  
+  a:active {
+    /* Khi click và giữ chuột */
+    color: purple;
+  }
+  
+  /* .btn:hover {
+    font-size: 30px;
+    height: 100px;
+    width: 300px;
+  } */
+  
+  /* transform */
+  .btn:hover {
+    /* translateX: dịch chuyển theo chiều ngang */
+    /* transform: translateX(100px); */
+    /* transform: translateX(-100px); */
+    /* nếu để số > 0 thì sẽ chuyển sang phải */
+    /* nếu để số < 0 thì sẽ chuyển sang trái */
+  
+    /* translateY: dịch chuyển theo chiều dọc */
+    /* transform: translateY(100px); */
+    /* nếu để số > 0 thì sẽ chuyển xuống dưới */
+    /* nếu để số < 0 thì sẽ chuyển lên trên */
+  
+    /* transform: rotateX(45deg); */
+    /* rotateX(n deg): xoay theo trục x (trục ngang) 1 góc n độ */
+    /* transform: rotateY(45deg); */
+    /* roateY(n deg): xoay theo trục y (trục dọc) 1 góc n độ */
+    /* transform: rotate(45deg); */
+    /* rotate = rotateZ(n deg): xoay theo trục z (trục từ màn hình hướng ra) 1 góc n độ */
+  
+    /* transform: scaleX(5); */
+    /* scaleX(n): phóng to n lần theo trục x */
+    /* 0<n<1 :thu nhỏ */
+    /* n > 1: phóng to n lần */
+    /* transform: scaleY(5); */
+    /* scaleY(n): phóng to n lần theo trục y */
+    /* transform: scale(5); */
+    /* scale = scaleZ(n): phóng to theo trục z */
+  
+    /* transform: skew(50deg); */
+    /* skewX: nghiêng theo trục X 1 góc n độ */
+    /* skewY: nghiêng theo trục Y 1 góc n độ */
+  }
+  
+  .hcn {
+    width: 200px;
+    height: 200px;
+    background: red;
+    /* transition-delay: 2s; */
+    transition-timing-function: ease-out;
+    transition-duration: 2s;
+  }
+  
+  .hcn:hover {
+    transform: translate(50px, 50px);
+  }
+  
+  /* animation */
+  .test-animation {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: chuyenmau;
+    animation-duration: 4s;
+  }
+  
+  @keyframes chuyenmau {
+    0% {
+      background: red;
+    }
+    10% {
+      background: green;
+    }
+    50% {
+      background: grey;
+    }
+    100% {
+      background: yellow;
+    }
+  }
